@@ -1,4 +1,4 @@
-#ZenDen Next.js To-Do Application
+# ZenDen Next.js To-Do Application
 
 ## Overview
 
