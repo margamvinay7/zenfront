@@ -2,11 +2,11 @@
 import { useState, ChangeEvent, FormEvent } from "react";
 import axios from "axios";
 
-interface TodoFormProps {
-  fetchTasks: () => Promise<void>;
-}
+// interface TodoFormProps {
+//   fetchTasks: () => any;
+// }
 
-const TodoForm: React.FC<TodoFormProps> = ({ fetchTasks }) => {
+const TodoForm = ({ fetchTasks }: any) => {
   const [title, setTitle] = useState<string>("");
   const [description, setDescription] = useState<string>("");
   const [dueDate, setDueDate] = useState<string>("");

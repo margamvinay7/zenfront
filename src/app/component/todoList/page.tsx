@@ -18,12 +18,7 @@ interface TodoListProps {
   editTask: (task: Task) => void;
 }
 
-const TodoList: React.FC<TodoListProps> = ({
-  tasks,
-  markComplete,
-  deleteTask,
-  editTask,
-}) => {
+const TodoList = ({ tasks, markComplete, deleteTask, editTask }: any) => {
   const [editingTaskId, setEditingTaskId] = useState<string | null>(null);
   const [editedTask, setEditedTask] = useState<Task | null>(null);
 
@@ -48,7 +43,7 @@ const TodoList: React.FC<TodoListProps> = ({
 
   return (
     <ul className="space-y-4">
-      {tasks.map((task) => (
+      {tasks?.map((task: any) => (
         <li
           key={task._id}
           className="flex items-center justify-between p-4 border border-gray-500 rounded"

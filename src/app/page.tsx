@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import TodoForm from "./component/todoForm/page";
 import TodoList from "./component/todoList/page";
-import ProtectedRoute from "./component/ProctedRotue/page";
+import ProtectedRoute from "./component/ProtectedRoute/page";
 
 interface Task {
   _id: string;
